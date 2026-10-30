@@ -10,6 +10,7 @@ import {
   Building2,
   ExternalLink,
 } from 'lucide-react';
+import { InstagramIcon, FacebookIcon, WhatsAppIcon } from './SocialIcons';
 import { companyInfo } from '../data/companyInfo';
 import logoImg from '../assets/logo.jpeg';
 
@@ -174,37 +175,35 @@ const Footer = () => {
                   href={companyInfo.socialLinks.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-gold-400 hover:bg-navy-800 transition-all"
+                  className="w-10 h-10 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-[#25D366] hover:bg-navy-800 transition-all shadow-sm"
                   aria-label="WhatsApp"
                 >
-                  <span className="text-xs font-bold">WA</span>
-                </a>
-                <a
-                  href={companyInfo.socialLinks.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-gold-400 hover:bg-navy-800 transition-all"
-                  aria-label="Facebook"
-                >
-                  <span className="text-xs font-bold">FB</span>
+                  <WhatsAppIcon className="w-5 h-5" />
                 </a>
                 <a
                   href={companyInfo.socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-gold-400 hover:bg-navy-800 transition-all"
+                  className="w-10 h-10 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-pink-400 hover:bg-navy-800 transition-all shadow-sm"
                   aria-label="Instagram"
                 >
-                  <span className="text-xs font-bold">IG</span>
+                  <InstagramIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href={companyInfo.socialLinks.youtube}
+                  href={companyInfo.socialLinks.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-gold-400 hover:bg-navy-800 transition-all"
-                  aria-label="YouTube"
+                  className="w-10 h-10 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:bg-navy-800 transition-all shadow-sm"
+                  aria-label="Facebook"
                 >
-                  <span className="text-xs font-bold">YT</span>
+                  <FacebookIcon className="w-5 h-5" />
+                </a>
+                <a
+                  href={companyInfo.socialLinks.phone}
+                  className="w-10 h-10 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-400/50 flex items-center justify-center text-slate-300 hover:text-gold-400 hover:bg-navy-800 transition-all shadow-sm"
+                  aria-label="Call"
+                >
+                  <Phone className="w-5 h-5" />
                 </a>
               </div>
             </div>

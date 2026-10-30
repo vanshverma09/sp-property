@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Share2, MessageCircle } from 'lucide-react';
+import { InstagramIcon } from './SocialIcons';
 import { companyInfo } from '../data/companyInfo';
 
 const FloatingSocialButtons = () => {
@@ -25,6 +26,20 @@ const FloatingSocialButtons = () => {
             <Phone className="w-4 h-4" />
           </div>
           <span className="text-xs font-semibold pr-1">Direct Call</span>
+        </a>
+
+        {/* Instagram Profile */}
+        <a
+          href={companyInfo.socialLinks.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-navy-900 text-white hover:bg-navy-800 shadow-lg border border-navy-700 transition-all"
+          aria-label="SP Properties Instagram"
+        >
+          <div className="w-8 h-8 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+            <InstagramIcon className="w-4 h-4" />
+          </div>
+          <span className="text-xs font-semibold pr-1">Instagram</span>
         </a>
 
         {/* Send Email */}
