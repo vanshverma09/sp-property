@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-slate-800 antialiased overflow-x-hidden;
+    font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-navy-900 tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #c9a857 0%, #e6dab1 50%, #b89033 100%);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #b89033 0%, #d7c284 50%, #9f7526 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, #07101d 0%, #0b192c 60%, #1b375b 100%);
+  }
+}
